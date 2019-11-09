@@ -122,7 +122,7 @@ body {
 
     &-content {
         padding: 53px 44px 92px 0;
-        max-width: 500px;
+        max-width: 391px;
         margin-left: 50%;
     }
 
@@ -132,11 +132,29 @@ body {
         font-weight: 400;
         line-height: 20.11px;
         text-transform: uppercase;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            width: 391px;
+            height: 1px;
+            background-color: #252525;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            left: 0;
+            width: 63px;
+            height: 2px;
+            background-color: #252525;
+        }
     }
 
     &__text {
         color: #000000;
-        font-size: 11px;
+        font-size: 14px;
         font-weight: 400;
     }
 
